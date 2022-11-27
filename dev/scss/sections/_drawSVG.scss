@@ -1,0 +1,14 @@
+#logo{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". logo .";
+
+    @include lg {
+        grid-template-rows: auto 1200px auto;
+    }
+    >div{
+        
+        grid-area: logo;
+     
+    }
+}
